@@ -57,6 +57,7 @@ namespace detail
     std::string get_translation(T, ...)
     {
         static_assert(!std::is_same<T, T>::value, "There is no translation for this string, or not all possible translations for it have been defined yet.");
+        return{};
     }
 
 }
