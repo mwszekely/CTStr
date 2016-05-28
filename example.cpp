@@ -3,6 +3,13 @@
 #include <iostream>
 #include <cassert>
 
+// This example acts as a translation system.  There's a function called translate that takes a string and a language and returns the translated string.
+// There are also a bunch of overloaded get_translation functions, one for each combination of string and language.
+// Which one is called is determined by overloading on the unique types of each string, and the unique type of each language.
+
+// The main advantage of this system is that there's a compile-time guarantee that you can't ask to translate a string that doesn't have a translation.
+// If you try, you'll get an error.
+
 enum class language
 {
     english,
