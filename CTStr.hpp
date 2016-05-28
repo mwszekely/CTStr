@@ -219,7 +219,7 @@ namespace detail
 	template <typename CharType>
 	constexpr CTSTR_EXPANDED_CHAR_TYPE c_str_lit_at_or_eol(const CharType* str, std::size_t strLength, std::size_t index)
 	{
-		return index >= strLength? CTSTR_INVALID_CHAR : str[index];
+		return index >= strLength? CTSTR_INVALID_CHAR : static_cast<CTSTR_EXPANDED_CHAR_TYPE>(str[index]);
 	}
 
 
