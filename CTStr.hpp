@@ -316,6 +316,8 @@ auto to_c_string(SeqType sequence = SeqType{})
 ////////////////////////////////////////////////////////////
 /// \mainpage CTStr: Compile-Time Strings
 ///
+/// <a href="https://github.com/mwszekely/CTStr/>Link to GitHub</a>
+///
 /// \section SuperBasic 5-Second Rundown
 /// If someone redirected you here and you want the 5-second rundown, this is what this library lets you do:
 /// \code
